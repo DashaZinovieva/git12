@@ -8,10 +8,14 @@ namespace git.phesicslogic
 {
     internal class pifagor
     {
-        static double CalculateHypotenuse(int a, int b, int angle)
+        public static int Calculate(int n)
         {
-            double c = Math.Pow(a, 2) + Math.Pow(b, 2) - (2 * b * a) * Math.Cos(angle);
-            return Math.Sqrt(c);
+            int res = 1;
+            for (int i = 0; i < n; i++)
+            {
+                res *= i;
+            }
+            return res;
         }
     }
 }
